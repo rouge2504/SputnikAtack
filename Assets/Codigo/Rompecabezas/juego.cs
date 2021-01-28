@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class juego : MonoBehaviour
 {
     public GameObject PiezaSeleccionada;
-    int capa = 1;
+    int capa = 2;
     public int PiezasEncajadas = 0;
     // Start is called before the first frame update
     void Start()
