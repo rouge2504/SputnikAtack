@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TouchRotate : MonoBehaviour
 {
-    float[] rotations = { 90, 180, 270 };
+    float[] rotations = { 0, 90, 180, 270 };
 
     void Start()
     {
@@ -14,7 +14,7 @@ public class TouchRotate : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if(!GameControl.youWin)
+        if (!GameControl.youWin)
         {
             transform.Rotate(0f, 0f, 90f);
         }
