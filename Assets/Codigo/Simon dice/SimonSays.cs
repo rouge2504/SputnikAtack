@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SimonSays : MonoBehaviour
 {
@@ -79,6 +80,7 @@ public class SimonSays : MonoBehaviour
                 mostrarcolores = 0;
                 StartCoroutine(Starten());
             }
+  
             else
             {
                 EndScene.SetActive(true);
@@ -124,5 +126,11 @@ public class SimonSays : MonoBehaviour
         mostrarcolores++;
 
         VistaPrevia();
+
+        if(numerodecolores == 8)
+        {
+            SceneManager.LoadScene("RompeCabezas");
+        }
+
     }
 }
