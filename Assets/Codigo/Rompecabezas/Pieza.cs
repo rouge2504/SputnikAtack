@@ -13,7 +13,7 @@ public class Pieza : MonoBehaviour
     void Start()
     {
         PosicionCorreta = transform.position;
-        transform.position = new Vector3(Random.Range(3f, 8f), Random.Range(-3f, 3f));
+        transform.position = new Vector3(Random.Range(3f, 6f), Random.Range(-3f, 3f));
     }
 
     // Update is called once per frame
@@ -32,4 +32,6 @@ public class Pieza : MonoBehaviour
             }
         }
     }
+
+
 }
