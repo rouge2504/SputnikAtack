@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4594100104157762677}
   - component: {fileID: 6604347591700123232}
   m_Layer: 0
-  m_Name: CajaNumero
+  m_Name: CajaNumero (0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102,7 +102,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.45, y: 1.455}
+    oldSize: {x: 0.96666664, y: 0.97}
     newSize: {x: 2.97, y: 2.92}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
