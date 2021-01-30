@@ -555,6 +555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   display: {fileID: 698921515}
   papel: {fileID: 911196008}
+  tiempoInicial: 0
 --- !u!4 &336783840
 Transform:
   m_ObjectHideFlags: 0

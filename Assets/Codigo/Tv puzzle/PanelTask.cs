@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 
 public class PanelTask : MonoBehaviour
 {
     public TextMeshProUGUI display;
     public TextMeshProUGUI papel;
+    public float tiempoInicial;
 
     // Start is called before the first frame update
     void Start()
@@ -52,7 +54,12 @@ public class PanelTask : MonoBehaviour
         if (display.text.Equals(papel.text))
         {
             display.text = "Correct";
-            Destroy(gameObject, 1.0f);
+
+            tiempoInicial++;
+            if (tiempoInicial == 1)
+            {
+                SceneManager.LoadScene("Puzzle libros");
+            }
         }
         else
         {

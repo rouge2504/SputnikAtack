@@ -24,6 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu de inicio.unity
     guid: c0f55c5e82b157648afecd8118888b48
   - enabled: 1
+<<<<<<< Updated upstream
     path: Assets/Scenes/02 Stair Hall/Stair Hall.unity
     guid: a72a2a9d8e1fd5849aab6c1daec6c388
   - enabled: 1
@@ -80,4 +81,17 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TV puzzle.unity
     guid: 513228847de5e3e40abf623e4984360b
+=======
+    path: Assets/Scenes/Creditos.unity
+    guid: 9219fa9a8467e734296c3753d324caad
+  - enabled: 1
+    path: Assets/Scenes/TV puzzle.unity
+    guid: 513228847de5e3e40abf623e4984360b
+  - enabled: 1
+    path: Assets/Scenes/Cereal Puzzle.unity
+    guid: 4524c6c98bf212048b4b8b867c73998d
+  - enabled: 1
+    path: Assets/Scenes/Puzzle libros.unity
+    guid: 0d857620facda934da14e5b7e0abde80
+>>>>>>> Stashed changes
   m_configObjects: {}

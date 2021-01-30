@@ -93,7 +93,7 @@ public class GameControl : MonoBehaviour
         if (Imagen0Funciona == true && Imagen1Funciona == true && Imagen2Funciona == true && Imagen3Funciona == true && Imagen4Funciona == true && Imagen5Funciona == true)
         {
             youWin = true;
-            SceneManager.LoadScene("Simon dice");
+            SceneManager.LoadScene("Cereal Puzzle");
         }
     }
 

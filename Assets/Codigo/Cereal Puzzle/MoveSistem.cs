@@ -4,17 +4,17 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
-public class juego : MonoBehaviour
+public class MoveSistem : MonoBehaviour
 {
     public GameObject PiezaSeleccionada;
     int capa = 2;
     public int PiezasEncajadas = 0;
     public bool CambiodeEscena = false;
-    public bool Noestastocandonada;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -25,10 +25,11 @@ public class juego : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
             if (hit.transform.CompareTag("Puzzle"))
             {
-                if (!hit.transform.GetComponent<Pieza>().Encajada)
+                if (!hit.transform.GetComponent<Objetos>().Encajada)
                 {
                     PiezaSeleccionada = hit.transform.gameObject;
-                    PiezaSeleccionada.GetComponent<Pieza>().Seleccionada = true;
+                    PiezaSeleccionada.GetComponent<Objetos>().Seleccionada = true;
+                    PiezaSeleccionada.GetComponent<Objetos>().cambiar = + 1;
                     PiezaSeleccionada.GetComponent<SortingGroup>().sortingOrder = capa;
                     capa++;
                 }
@@ -39,7 +40,7 @@ public class juego : MonoBehaviour
         {
             if (PiezaSeleccionada != null)
             {
-                PiezaSeleccionada.GetComponent<Pieza>().Seleccionada = false;
+                PiezaSeleccionada.GetComponent<Objetos>().Seleccionada = false;
                 PiezaSeleccionada = null;
             }
         }
@@ -48,10 +49,9 @@ public class juego : MonoBehaviour
             Vector3 raton = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             PiezaSeleccionada.transform.position = new Vector3(raton.x, raton.y, 0);
         }
-
-        if (PiezasEncajadas == 8)
+        if (PiezasEncajadas == 4)
         {
-            SceneManager.LoadScene("Rotatorio Cocina");
+            SceneManager.LoadScene("Tv puzzle");
         }
     }
 }
