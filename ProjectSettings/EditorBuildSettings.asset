@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Simon dice.unity
     guid: 143683d51d622d84ea51c34a57cdff7a
+  - enabled: 1
+    path: Assets/Scenes/Menu de inicio.unity
+    guid: c0f55c5e82b157648afecd8118888b48
+  - enabled: 1
+    path: Assets/Scenes/Creditos.unity
+    guid: 9219fa9a8467e734296c3753d324caad
   m_configObjects: {}
