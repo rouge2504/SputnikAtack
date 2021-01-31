@@ -16,7 +16,7 @@ public class Objetos : MonoBehaviour
     void Start()
     {
         PosicionCorreta = transform.position;
-        transform.position = new Vector3(Random.Range(-7f, 7f), Random.Range(-3f, -2f));
+        transform.position = new Vector3(Random.Range(-3f, 3f), Random.Range(-3f, -2f));
     }
 
     // Update is called once per frame
