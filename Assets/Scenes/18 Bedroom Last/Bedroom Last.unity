@@ -676,6 +676,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 964952136}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &964952138 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 627615373349199356, guid: 44350f14323101149a537f3b7bdfd871,
+    type: 3}
+  m_PrefabInstance: {fileID: 964952136}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1140807195
 GameObject:
   m_ObjectHideFlags: 0
@@ -1260,6 +1266,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6056207032698539781, guid: 85911635c5c3dea429b4ba80e33ec2cb,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 964952138}
     - target: {fileID: 6056207032698539781, guid: 85911635c5c3dea429b4ba80e33ec2cb,
         type: 3}
       propertyPath: TiempoLimite

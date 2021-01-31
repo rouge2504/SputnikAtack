@@ -86,7 +86,6 @@ public class MovimientoJugador : MonoBehaviour
             tiempoInicial += Time.deltaTime;
  
                 Debug.Log("Estoy disparando timing to bullet");
-
                 GameObject clone = Instantiate(bullet, spawnBullet.position, spawnBullet.rotation);
                 clone.GetComponent<BulletEnemy>().targetPos = target.position;
             
