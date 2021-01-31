@@ -4,5 +4,95 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/RedCoat.unity
+    guid: 44720b0c1d952ce4698dd61834c854f3
+  - enabled: 1
+    path: Assets/Scenes/Menu de inicio.unity
+    guid: c0f55c5e82b157648afecd8118888b48
+  - enabled: 1
+    path: Assets/Scenes/01 Living Room/Living Room.unity
+    guid: 14466c5f029794d4f9dcec836a6caae1
+  - enabled: 1
+    path: Assets/Scenes/12 east porch/East Porch.unity
+    guid: 415ec2b4d03a3494f850215d22dd0e39
+  - enabled: 1
+    path: Assets/Scenes/02 Stair Hall/Stair Hall.unity
+    guid: a72a2a9d8e1fd5849aab6c1daec6c388
+  - enabled: 1
+    path: Assets/Scenes/03 Pantry/Pantry.unity
+    guid: 3b9e5eafaa6986140af2134a0ed1a830
+  - enabled: 1
+    path: Assets/Scenes/04 Dining Room/FoodRoom.unity
+    guid: 73d5d198f59637741897e9bba8db287b
+  - enabled: 1
+    path: Assets/Scenes/05 pasillo este/Pasillo este.unity
+    guid: d1e1183ca40ff254ab6d2b227c6f5d69
+  - enabled: 1
+    path: Assets/Scenes/09 Sitting room/Sitting room.unity
+    guid: 47dbb7ea640b752459b9590385f01f79
+  - enabled: 1
+    path: Assets/Scenes/06 Conexion living/Conexion living.unity
+    guid: 4ceb5f9b1cf7c6a4c948c5265fd2594f
+  - enabled: 1
+    path: Assets/Scenes/07 Kitchen/Kitchen.unity
+    guid: ead448f54e36b9f4da197625481c2983
+  - enabled: 1
+    path: Assets/Scenes/08 Storage/Storage.unity
+    guid: c0a2df1c8841e9e44a3a542f4c936bcd
+  - enabled: 1
+    path: Assets/Scenes/10 Bedroom/Bedroom.unity
+    guid: 5375481a1469cfd47bd757b06356da3c
+  - enabled: 1
+    path: Assets/Scenes/11 North East/North East.unity
+    guid: ec362f5153ddfe14db4a1c2f40c5d477
+  - enabled: 1
+    path: Assets/Scenes/13 Library/Library.unity
+    guid: 5caea105da5e2ae4cb8aa0e41cfac8a7
+  - enabled: 1
+    path: Assets/Scenes/14 Powder Room/Powder Room.unity
+    guid: 154b31ed842a7dd4d8933f7610b148be
+  - enabled: 1
+    path: Assets/Scenes/15 Bathroom/Bathroom.unity
+    guid: 2c17c97c7680bbe4bb93c8480dabe1e3
+  - enabled: 1
+    path: Assets/Scenes/16 Big Sitting Room/Big Sitting room.unity
+    guid: 68360b051ee5ef9478488bbc0fd7175a
+  - enabled: 1
+    path: Assets/Scenes/17 Dressing room/Dressing Room.unity
+    guid: c56cb2fc8ed3c7747bbb3b6f44cdd259
+  - enabled: 1
+    path: Assets/Scenes/18 Bedroom Last/Bedroom Last.unity
+    guid: 7c366c6409c359047a8181ea96ea7e6f
+  - enabled: 1
+    path: Assets/Scenes/Cereal Puzzle.unity
+    guid: 4524c6c98bf212048b4b8b867c73998d
+  - enabled: 1
+    path: Assets/Scenes/Creditos.unity
+    guid: 9219fa9a8467e734296c3753d324caad
+  - enabled: 1
+    path: Assets/Scenes/Puzzle libros.unity
+    guid: 0d857620facda934da14e5b7e0abde80
+  - enabled: 1
+    path: Assets/Scenes/Puzzle15.unity
+    guid: 1adcaa4a81122ad48b0bf94be07b5d0a
+  - enabled: 1
+    path: Assets/Scenes/RompeCabezas.unity
+    guid: 9081d7483c169294ca985f7214414f98
+  - enabled: 1
+    path: Assets/Scenes/Rotatorio Cocina.unity
+    guid: 39dedb61cd06ed442a77eb36342bcca5
+  - enabled: 1
+    path: Assets/Scenes/Simon dice.unity
+    guid: 143683d51d622d84ea51c34a57cdff7a
+  - enabled: 1
+    path: Assets/Scenes/TV puzzle.unity
+    guid: 513228847de5e3e40abf623e4984360b
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: fe43c23f42203a6459b58c03a0905c42
+  - enabled: 1
+    path: Assets/Scenes/Agradecimientos.unity
+    guid: d98284baa3b1b8541be9e7f068749ab3
   m_configObjects: {}

@@ -9,6 +9,8 @@ public class juego : MonoBehaviour
     public GameObject PiezaSeleccionada;
     int capa = 2;
     public int PiezasEncajadas = 0;
+    public bool CambiodeEscena = false;
+    public bool Noestastocandonada;
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +47,11 @@ public class juego : MonoBehaviour
         {
             Vector3 raton = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             PiezaSeleccionada.transform.position = new Vector3(raton.x, raton.y, 0);
+        }
+
+        if (PiezasEncajadas == 8)
+        {
+            SceneManager.LoadScene("Rotatorio Cocina");
         }
     }
 }

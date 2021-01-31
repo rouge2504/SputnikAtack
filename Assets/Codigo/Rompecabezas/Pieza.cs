@@ -8,6 +8,7 @@ public class Pieza : MonoBehaviour
     private Vector3 PosicionCorreta;
     public bool Encajada;
     public bool Seleccionada;
+    public int cambiar = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -27,11 +28,22 @@ public class Pieza : MonoBehaviour
                 {
                     transform.position = PosicionCorreta;
                     GetComponent<SortingGroup>().sortingOrder = 0;
-                    Camera.main.GetComponent<juego>().PiezasEncajadas++;
+
+                    if(transform.position == PosicionCorreta)
+                    {
+                        Encajada = true;
+
+                        if (Encajada == true)
+                        {
+                            Camera.main.GetComponent<juego>().PiezasEncajadas++;
+
+                        }
+                    }
                 }
+
             }
         }
     }
 
-
+    
 }
