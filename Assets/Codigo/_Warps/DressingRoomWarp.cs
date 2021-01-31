@@ -7,7 +7,7 @@ public class DressingRoomWarp : MonoBehaviour
 {
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<MovimientoJugador>() != null)
+        if (collision.GetComponent<MovimientoJugador>() != null && VariablesGlobales.Enemigo_fase3_existe == false)
         {
             SceneManager.LoadScene("Dressing Room");
         }
