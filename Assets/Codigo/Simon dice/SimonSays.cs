@@ -96,13 +96,22 @@ public class SimonSays : MonoBehaviour
 
     IEnumerator Starten()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.01f);
 
         Generator();
     }
 
     IEnumerator Siguiente()
     {
+        if (numerodecolores == 8)
+        {
+            if (VariablesGlobales.Sello_azar == 1)
+            {
+                VariablesGlobales.Sello = true;
+            }
+            SceneManager.LoadScene("Library");
+        }
+
         yield return new WaitForSeconds(0.5f);
 
         Contador.color = Color.white;
@@ -113,10 +122,7 @@ public class SimonSays : MonoBehaviour
 
         VistaPrevia();
 
-        if(numerodecolores == 8)
-        {
-            SceneManager.LoadScene("RompeCabezas");
-        }
+     
 
     }
 
