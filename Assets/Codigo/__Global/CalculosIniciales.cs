@@ -20,6 +20,7 @@ public class CalculosIniciales : MonoBehaviour
             Debug.Log("Sello" + VariablesGlobales.Sello_azar);
             Debug.Log("Corona" + VariablesGlobales.Corona_azar);
             VariablesGlobales.Primera_carga = false;
+            
         }
       
     }

@@ -134,6 +134,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+<<<<<<< HEAD
+=======
+--- !u!114 &5321689743367709910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5321689743367709911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccd1b551400425c4986e20c4519287f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: 0
+  target: {fileID: 0}
+  speed: 1
+  timeToMove: 5
+  timeToWait: 3
+  timeToSpawnBullet: 0.5
+  bullet: {fileID: 8073920405425815234, guid: e869ef5cf23059d4fb322d34ea4cd5c7, type: 3}
+  spawnBullet: {fileID: 5321689742672278334}
+>>>>>>> main
 --- !u!1 &5321689744199944996
 GameObject:
   m_ObjectHideFlags: 0

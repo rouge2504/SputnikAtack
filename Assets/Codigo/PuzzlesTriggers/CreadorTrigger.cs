@@ -7,6 +7,10 @@ public class CreadorTrigger : MonoBehaviour
 {
     public void OnMouseUpAsButton()
     {
-        SceneManager.LoadScene("The Crown");
+        if(VariablesGlobales.Cuero == true && VariablesGlobales.Sello == true && VariablesGlobales.Corona == true)
+        {
+            SceneManager.LoadScene("The Crown");
+        }
+        
     }
 }
