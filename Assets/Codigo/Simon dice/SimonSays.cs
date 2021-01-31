@@ -134,7 +134,7 @@ public class SimonSays : MonoBehaviour
 
     public void Exit()
     {
-        SceneManager.LoadScene("Living Room");
+        SceneManager.LoadScene("Library");
         Time.timeScale = 1;
     }
 }

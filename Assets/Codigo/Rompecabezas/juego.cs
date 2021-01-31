@@ -51,7 +51,11 @@ public class juego : MonoBehaviour
 
         if (PiezasEncajadas == 8)
         {
-            SceneManager.LoadScene("Rotatorio Cocina");
+            if(VariablesGlobales.Sello_azar == 2)
+            {
+                VariablesGlobales.Sello = true;
+            }
+            Exit();
         }
     }
 
@@ -62,6 +66,6 @@ public class juego : MonoBehaviour
 
     public void Exit()
     {
-        SceneManager.LoadScene("Living Room");
+        SceneManager.LoadScene("FoodRoom");
     }
 }

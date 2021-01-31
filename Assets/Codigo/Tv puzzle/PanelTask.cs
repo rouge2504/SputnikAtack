@@ -58,7 +58,11 @@ public class PanelTask : MonoBehaviour
             tiempoInicial++;
             if (tiempoInicial == 1)
             {
-                SceneManager.LoadScene("Puzzle libros");
+                if (VariablesGlobales.Cuero_azar == 2)
+                {
+                    VariablesGlobales.Cuero = true;
+                }
+                Exit();
             }
         }
         else
@@ -69,6 +73,6 @@ public class PanelTask : MonoBehaviour
 
     public void Exit()
     {
-        SceneManager.LoadScene("Living Room");
+        SceneManager.LoadScene("Sitting room");
     }
 }

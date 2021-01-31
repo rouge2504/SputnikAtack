@@ -967,6 +967,7 @@ GameObject:
   - component: {fileID: 1655203375}
   - component: {fileID: 1655203378}
   - component: {fileID: 1655203376}
+  - component: {fileID: 1655203377}
   m_Layer: 0
   m_Name: Fridge
   m_TagString: Untagged
@@ -1019,6 +1020,18 @@ PolygonCollider2D:
       - {x: 0.69016856, y: 1.4165123}
       - {x: 0.7434263, y: 0.8487476}
       - {x: 0.6296966, y: -1.3683225}
+--- !u!114 &1655203377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655203374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544ce4dba78913e47a1cb1073351af5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &1655203378
 SpriteRenderer:
   m_ObjectHideFlags: 0
