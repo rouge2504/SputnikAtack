@@ -118,6 +118,7 @@ public class Boss3 : MonoBehaviour
         if (VariablesGlobales.Vida_enemigo_fase3 == 0)
         {
             VariablesGlobales.Enemigo_fase3_existe = false;
+            SceneManager.LoadScene("God1");
         }
     }
 }
