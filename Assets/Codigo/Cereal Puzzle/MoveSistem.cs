@@ -10,6 +10,7 @@ public class MoveSistem : MonoBehaviour
     int capa = 2;
     public int PiezasEncajadas = 0;
     public bool CambiodeEscena = false;
+    public bool ObjetoClave;
 
     // Start is called before the first frame update
     void Start()
@@ -49,9 +50,10 @@ public class MoveSistem : MonoBehaviour
             Vector3 raton = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             PiezaSeleccionada.transform.position = new Vector3(raton.x, raton.y, 0);
         }
-        if (PiezasEncajadas == 4)
+        if (PiezasEncajadas == 3)
         {
             SceneManager.LoadScene("Tv puzzle");
+            ObjetoClave = true;
         }
     }
 }
