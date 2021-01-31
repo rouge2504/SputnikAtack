@@ -54,4 +54,16 @@ public class AcomodarLibros : MonoBehaviour
             SceneManager.LoadScene("Creditos");
         }
     }
+
+    public void Retry()
+    {
+        SceneManager.LoadScene("Puzzle libros");
+        Time.timeScale = 1;
+    }
+
+    public void Exit()
+    {
+        SceneManager.LoadScene("Living Room");
+        Time.timeScale = 1;
+    }
 }

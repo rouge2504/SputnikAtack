@@ -97,4 +97,14 @@ public class GameControl : MonoBehaviour
         }
     }
 
+    public void Retry()
+    {
+        SceneManager.LoadScene("Rotatorio Cocina");
+    }
+
+    public void Exit()
+    {
+        SceneManager.LoadScene("Living Room");
+    }
+
 }

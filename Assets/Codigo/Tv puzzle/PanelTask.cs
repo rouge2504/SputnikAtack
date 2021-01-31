@@ -66,4 +66,9 @@ public class PanelTask : MonoBehaviour
             display.text = "Denied";
         }
     }
+
+    public void Exit()
+    {
+        SceneManager.LoadScene("Living Room");
+    }
 }

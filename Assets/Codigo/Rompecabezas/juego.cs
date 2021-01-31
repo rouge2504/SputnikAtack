@@ -54,4 +54,14 @@ public class juego : MonoBehaviour
             SceneManager.LoadScene("Rotatorio Cocina");
         }
     }
+
+    public void Retry()
+    {
+        SceneManager.LoadScene("RompeCabezas");
+    }
+
+    public void Exit()
+    {
+        SceneManager.LoadScene("Living Room");
+    }
 }

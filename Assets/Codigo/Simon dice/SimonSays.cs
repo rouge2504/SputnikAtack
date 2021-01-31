@@ -24,9 +24,6 @@ public class SimonSays : MonoBehaviour
 
     public GameObject EndScene;
 
-    public int Highscore;
-    public Text HighScoreText;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -79,23 +76,12 @@ public class SimonSays : MonoBehaviour
                 Desaparece = 0;
                 mostrarcolores = 0;
                 StartCoroutine(Starten());
-            }
-  
-            else
-            {
-                EndScene.SetActive(true);
-                Gamemanager.SetActive(true);
-                Highscore = PlayerPrefs.GetInt("Highschore");
-                if (numerodecolores > Highscore)
-                {
-                    Highscore = numerodecolores;
-                    PlayerPrefs.SetInt("Highscore", Highscore);
-                }
-                HighScoreText.text = "Highscore" + Highscore;
-                DesapacererTexto.text = "";
-                Desaparece = 0;
-                mostrarcolores = 0;
-            }
+            }          
+        }
+        else
+        {
+            DesapacererTexto.text = "error";
+            Time.timeScale = 0;
         }
 
     }
@@ -138,5 +124,17 @@ public class SimonSays : MonoBehaviour
 
      
 
+    }
+
+    public void Retry()
+    {
+        SceneManager.LoadScene("Simon dice");
+        Time.timeScale = 1;
+    }
+
+    public void Exit()
+    {
+        SceneManager.LoadScene("Living Room");
+        Time.timeScale = 1;
     }
 }

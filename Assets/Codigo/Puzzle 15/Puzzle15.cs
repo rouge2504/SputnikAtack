@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Puzzle15 : MonoBehaviour
 {
@@ -134,5 +135,15 @@ public class Puzzle15 : MonoBehaviour
                 n++;
             }
         return true;
+    }
+
+    public void Retry()
+    {
+        SceneManager.LoadScene("Puzzle15");
+    }
+
+    public void Exit()
+    {
+        SceneManager.LoadScene("Living Room");
     }
 }

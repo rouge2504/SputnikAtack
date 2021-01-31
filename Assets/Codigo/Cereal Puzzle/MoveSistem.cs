@@ -56,4 +56,16 @@ public class MoveSistem : MonoBehaviour
             ObjetoClave = true;
         }
     }
+
+    public void Retry()
+    {
+        SceneManager.LoadScene("Cereal Puzzle");
+        Time.timeScale = 1;
+    }
+
+    public void Exit()
+    {
+        SceneManager.LoadScene("Living Room");
+        Time.timeScale = 1;
+    }
 }
