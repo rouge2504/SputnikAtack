@@ -98,4 +98,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Morse.unity
     guid: 67aeecebd138ac54ab90b172a1cff06e
+  - enabled: 1
+    path: Assets/Scenes/The Crown.unity
+    guid: 6e663db15808e8d48901b25028caeda7
   m_configObjects: {}
