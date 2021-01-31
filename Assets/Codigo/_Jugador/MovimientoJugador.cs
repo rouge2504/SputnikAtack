@@ -110,7 +110,7 @@ public class MovimientoJugador : MonoBehaviour
        if(VariablesGlobales.Vida_jugador == 0)
         {
             VariablesGlobales.Primera_carga = true;
-            SceneManager.LoadScene("Living Room");
+            SceneManager.LoadScene("BAD1");
         }
     }
 
