@@ -13,11 +13,10 @@ public class CalculosIniciales : MonoBehaviour
     {
         objetos_reiniciar();
         vidas_reiniciar();
-        zonas_reiniciar();
         RNG_recalcular();
-        Debug.Log("Cuero" + VariablesGlobales.Cuero);
-        Debug.Log("Sello" + VariablesGlobales.Sello);
-        Debug.Log("Corona" + VariablesGlobales.Corona);
+        Debug.Log("Cuero" + VariablesGlobales.Cuero_azar);
+        Debug.Log("Sello" + VariablesGlobales.Sello_azar);
+        Debug.Log("Corona" + VariablesGlobales.Corona_azar);
     }
 
     public void objetos_reiniciar()
@@ -36,11 +35,13 @@ public class CalculosIniciales : MonoBehaviour
         VariablesGlobales.Vida_enemigo_fase3 = 100f;
     }
 
-    public void zonas_reiniciar()
+    public void enemigos_reiniciar()
     {
-        VariablesGlobales.Zona1_bloqueada = true;
-        VariablesGlobales.Zona2_bloqueada = false;
+        VariablesGlobales.Enemigo_fase1_existe = true;
+        VariablesGlobales.Enemigo_fase2_existe = false;
+        VariablesGlobales.Enemigo_fase3_existe = false;
     }
+
 
     public void RNG_recalcular()
     {

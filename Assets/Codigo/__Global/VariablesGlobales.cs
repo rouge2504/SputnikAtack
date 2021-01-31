@@ -5,7 +5,7 @@ using UnityEngine;
 public static class VariablesGlobales 
 {
     private static int cuero_azar, sello_azar, corona_azar;
-    private static bool cuero, sello, corona, talisman, llave1, llave2, zona1_bloqueada, zona2_bloqueada;
+    private static bool cuero, sello, corona, talisman, llave1, llave2, enemigo_fase1_existe, enemigo_fase2_existe, enemigo_fase3_existe;
     private static float vida_jugador, vida_enemigo_fase1, vida_enemigo_fase2, vida_enemigo_fase3;
     public static int Cuero_azar
     {
@@ -123,29 +123,42 @@ public static class VariablesGlobales
         }
     }
 
-    public static bool Zona1_bloqueada
+    public static bool Enemigo_fase1_existe
     {
         get
         {
-            return zona1_bloqueada;
+            return enemigo_fase1_existe;
         }
 
         set
         {
-            zona1_bloqueada = value;
+            enemigo_fase1_existe = value;
         }
     }
 
-    public static bool Zona2_bloqueada
+    public static bool Enemigo_fase2_existe
     {
         get
         {
-            return zona2_bloqueada;
+            return enemigo_fase2_existe;
         }
 
         set
         {
-            zona2_bloqueada = value;
+            enemigo_fase2_existe = value;
+        }
+    }
+
+    public static bool Enemigo_fase3_existe
+    {
+        get
+        {
+            return enemigo_fase3_existe;
+        }
+
+        set
+        {
+            enemigo_fase3_existe = value;
         }
     }
 

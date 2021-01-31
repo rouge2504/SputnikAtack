@@ -7,7 +7,7 @@ public class PowderRoomWarp : MonoBehaviour
 {
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<MovimientoJugador>() != null)
+        if (collision.GetComponent<MovimientoJugador>() != null && VariablesGlobales.Llave2 == true && VariablesGlobales.Enemigo_fase2_existe == false)
         {
             SceneManager.LoadScene("Powder Room");
         }
