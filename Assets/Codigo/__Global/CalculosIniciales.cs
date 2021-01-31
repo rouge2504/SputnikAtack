@@ -11,12 +11,17 @@ public class CalculosIniciales : MonoBehaviour
 
     public void Start()
     {
-        objetos_reiniciar();
-        vidas_reiniciar();
-        RNG_recalcular();
-        Debug.Log("Cuero" + VariablesGlobales.Cuero_azar);
-        Debug.Log("Sello" + VariablesGlobales.Sello_azar);
-        Debug.Log("Corona" + VariablesGlobales.Corona_azar);
+        if (VariablesGlobales.Primera_carga)
+        {
+            objetos_reiniciar();
+            vidas_reiniciar();
+            RNG_recalcular();
+            Debug.Log("Cuero" + VariablesGlobales.Cuero_azar);
+            Debug.Log("Sello" + VariablesGlobales.Sello_azar);
+            Debug.Log("Corona" + VariablesGlobales.Corona_azar);
+            VariablesGlobales.Primera_carga = false;
+        }
+      
     }
 
     public void objetos_reiniciar()

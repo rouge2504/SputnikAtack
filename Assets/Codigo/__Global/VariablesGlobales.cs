@@ -7,6 +7,20 @@ public static class VariablesGlobales
     private static int cuero_azar, sello_azar, corona_azar;
     private static bool cuero, sello, corona, talisman, llave1, llave2, enemigo_fase1_existe, enemigo_fase2_existe, enemigo_fase3_existe;
     private static float vida_jugador, vida_enemigo_fase1, vida_enemigo_fase2, vida_enemigo_fase3;
+    private static bool primera_carga = true;
+
+    public static bool Primera_carga
+    {
+        get
+        {
+            return primera_carga;
+        }
+
+        set
+        {
+            primera_carga = value;
+        }
+    }
     public static int Cuero_azar
     {
         get
