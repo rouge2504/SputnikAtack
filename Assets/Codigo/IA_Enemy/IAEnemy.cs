@@ -87,6 +87,28 @@ public class IAEnemy : MonoBehaviour
         transform.Translate(lookDirection * Time.deltaTime * speed);
     }
 
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (dañorecibido == false)
+        {
+            if (collision.gameObject.tag == "Shoot2")
+            {
+                Debug.Log("Recibi daño");
+                VariablesGlobales.Vida_enemigo_fase1 -= 20;
+                dañorecibido = true;
+            }
+        }
+        if (dañorecibido == true)
+        {
+            vunerable++;
+        }
+        if (vunerable == Invunerable)
+        {
+            dañorecibido = false;
+            vunerable = 0;
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (dañorecibido == false)
@@ -113,6 +135,7 @@ public class IAEnemy : MonoBehaviour
     {
         if (VariablesGlobales.Vida_enemigo_fase1 == 0)
         {
+            Destroy(this.gameObject);
             VariablesGlobales.Enemigo_fase1_existe = false;
         }
     }

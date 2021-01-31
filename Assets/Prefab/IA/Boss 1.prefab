@@ -105,6 +105,8 @@ GameObject:
   - component: {fileID: 6743824054848485913}
   - component: {fileID: 6743824054848485914}
   - component: {fileID: 6743824054848485915}
+  - component: {fileID: 4354845111245006425}
+  - component: {fileID: -2519984400143379883}
   m_Layer: 0
   m_Name: Boss 1
   m_TagString: Untagged
@@ -218,6 +220,56 @@ MonoBehaviour:
   timeToSpawnBullet: 1
   bullet: {fileID: 8073920405425815234, guid: e869ef5cf23059d4fb322d34ea4cd5c7, type: 3}
   spawnBullet: {fileID: 6743824055061812301}
+  Invunerable: 5
+  vunerable: 0
+  "da\xF1orecibido": 0
+--- !u!50 &4354845111245006425
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6743824054848485892}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &-2519984400143379883
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6743824054848485892}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 30.000002, y: 30.000002}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
+  m_EdgeRadius: 0
 --- !u!1 &6743824055061812302
 GameObject:
   m_ObjectHideFlags: 0

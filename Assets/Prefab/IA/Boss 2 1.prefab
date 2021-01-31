@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 6001776853803051795}
   - component: {fileID: 6001776853803051798}
   - component: {fileID: 6001776853803051794}
+  - component: {fileID: 5771733231703905315}
   m_Layer: 0
   m_Name: Boss 2 1
   m_TagString: Shoot
@@ -268,3 +269,24 @@ MonoBehaviour:
   Invunerable: 5
   vunerable: 0
   "da\xF1orecibido": 0
+--- !u!50 &5771733231703905315
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6001776853803051793}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

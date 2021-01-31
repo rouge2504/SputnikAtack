@@ -85,6 +85,27 @@ public class Boss3 : MonoBehaviour
         lookDirection = (target.position - transform.position).normalized;
         transform.Translate(lookDirection * Time.deltaTime * speed);
     }
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (dañorecibido == false)
+        {
+            if (collision.gameObject.tag == "Shoot2")
+            {
+                Debug.Log("Recibi daño");
+                VariablesGlobales.Vida_enemigo_fase3 -= 20;
+                dañorecibido = true;
+            }
+        }
+        if (dañorecibido == true)
+        {
+            vunerable++;
+        }
+        if (vunerable == Invunerable)
+        {
+            dañorecibido = false;
+            vunerable = 0;
+        }
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -114,6 +135,7 @@ public class Boss3 : MonoBehaviour
         {
             VariablesGlobales.Enemigo_fase3_existe = false;
             SceneManager.LoadScene("God1");
+            
         }
     }
 }
