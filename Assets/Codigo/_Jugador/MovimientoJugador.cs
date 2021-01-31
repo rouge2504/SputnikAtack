@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MovimientoJugador : MonoBehaviour
 {
@@ -11,6 +12,10 @@ public class MovimientoJugador : MonoBehaviour
     private Animator animator;
     public bool animacion;
     public bool atack;
+    public float Invunerable = 5f;
+    public float vunerable = 0;
+    public bool dañorecibido;
+
 
     public float tiempoInicial;
     public float TiempoLimite = 0.8f;
@@ -24,6 +29,7 @@ public class MovimientoJugador : MonoBehaviour
     void Update()
     {
         inputs();
+        muerto();
     }
 
     public void FixedUpdate()
@@ -82,6 +88,37 @@ public class MovimientoJugador : MonoBehaviour
             animator.SetBool("Shoot", false);
             atack = false;
             tiempoInicial = 0;
+        }
+
+    }
+
+    public void muerto()
+    {
+       if(VariablesGlobales.Vida_jugador == 0)
+        {
+            VariablesGlobales.Primera_carga = true;
+            SceneManager.LoadScene("Living Room");
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (dañorecibido == false)
+        {
+            if (collision.gameObject.tag == "Shoot")
+            {
+                VariablesGlobales.Vida_jugador -= 20;
+                dañorecibido = true;
+            }
+        }
+        if (dañorecibido == true)
+        {
+            vunerable++;
+        }
+        if (vunerable == Invunerable)
+        {
+            dañorecibido = false;
+            vunerable = 0;
         }
 
     }

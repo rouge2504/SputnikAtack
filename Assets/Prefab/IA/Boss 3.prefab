@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 1121522890277149264}
   - component: {fileID: 1121522890277149265}
   - component: {fileID: 1121522890277149270}
-  - component: {fileID: 1121522890277149271}
+  - component: {fileID: 8295361416477810131}
   m_Layer: 0
   m_Name: Boss 3
   m_TagString: Untagged
@@ -228,7 +228,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1121522890277149271
+--- !u!114 &8295361416477810131
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -237,14 +237,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1121522890277149266}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccd1b551400425c4986e20c4519287f6, type: 3}
+  m_Script: {fileID: 11500000, guid: 67ae946ad9a78b244920ea1d4d845d7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   target: {fileID: 0}
-  speed: 1
+  speed: 2
   timeToMove: 5
   timeToWait: 3
-  timeToSpawnBullet: 0.5
-  bullet: {fileID: 8073920405425815234, guid: e869ef5cf23059d4fb322d34ea4cd5c7, type: 3}
-  spawnBullet: {fileID: 1121522888788582224}
+  timeToSpawnBullet: 3
+  bullet: {fileID: 0}
+  spawnBullet: {fileID: 0}
+  Invunerable: 5
+  vunerable: 0
+  "da\xF1orecibido": 0

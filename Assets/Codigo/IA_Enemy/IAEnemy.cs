@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class IAEnemy : MonoBehaviour
 {
@@ -27,7 +28,10 @@ public class IAEnemy : MonoBehaviour
     [SerializeField] private GameObject bullet;
     [SerializeField] private Transform spawnBullet;
 
-    
+    public float Invunerable = 5f;
+    public float vunerable = 0;
+    public bool dañorecibido;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +44,7 @@ public class IAEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        muerto();
 
         if (activeMove)
         {
@@ -63,6 +68,12 @@ public class IAEnemy : MonoBehaviour
                 clone.GetComponent<BulletEnemy>().targetPos = target.position;
             }
         }
+
+        if (VariablesGlobales.Vida_jugador == 0)
+        {
+            VariablesGlobales.Enemigo_fase1_existe = false;
+            SceneManager.LoadScene("Living Room");
+        }
     }
 
     IEnumerator ChangeState()
@@ -78,5 +89,35 @@ public class IAEnemy : MonoBehaviour
         timingToSpawnBullet = 0;
         lookDirection = (target.position - transform.position).normalized;
         transform.Translate(lookDirection * Time.deltaTime * speed);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (dañorecibido == false)
+        {
+            if (collision.gameObject.tag == "Shoot")
+            {
+                VariablesGlobales.Vida_enemigo_fase1 -= 20;
+                dañorecibido = true;
+            }
+        }
+        if (dañorecibido == true)
+        {
+            vunerable++;
+        }
+        if (vunerable == Invunerable)
+        {
+            dañorecibido = false;
+            vunerable = 0;
+        }
+
+    }
+
+    public void muerto()
+    {
+        if (VariablesGlobales.Vida_enemigo_fase1 == 0)
+        {
+            VariablesGlobales.Enemigo_fase1_existe = false;
+        }
     }
 }

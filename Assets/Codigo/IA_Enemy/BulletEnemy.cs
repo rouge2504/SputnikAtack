@@ -23,4 +23,12 @@ public class BulletEnemy : MonoBehaviour
     {
         transform.Translate((targetPos - transform.position).normalized * Time.deltaTime * speed);
     }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }
