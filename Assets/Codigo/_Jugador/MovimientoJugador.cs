@@ -13,7 +13,7 @@ public class MovimientoJugador : MonoBehaviour
     public bool atack;
 
     public float tiempoInicial;
-    public float TiempoLimite;
+    public float TiempoLimite = 0.8f;
 
     void Start()
     {
