@@ -34,7 +34,14 @@ public class Puzzle15 : MonoBehaviour
         int dx = getDX(x, y);
         int dy = getDY(x, y);
         Cambiar(x, y, dx, dy);
-        Debug.Log(Victoria());
+        if (Victoria())
+        {
+            if(VariablesGlobales.Corona_azar == 2)
+            {
+                VariablesGlobales.Corona = true;
+            }
+            Exit();
+        }
     }
 
     void Cambiar(int x, int y, int dx, int dy)
@@ -144,6 +151,6 @@ public class Puzzle15 : MonoBehaviour
 
     public void Exit()
     {
-        SceneManager.LoadScene("Living Room");
+        SceneManager.LoadScene("Bathroom");
     }
 }
