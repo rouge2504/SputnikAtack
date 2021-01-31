@@ -51,7 +51,11 @@ public class AcomodarLibros : MonoBehaviour
 
         if (PiezasEncajadas == 3)
         {
-            SceneManager.LoadScene("Creditos");
+            if(VariablesGlobales.Cuero_azar == 4)
+            {
+                VariablesGlobales.Cuero = true;
+            }
+            Exit();
         }
     }
 
@@ -63,7 +67,7 @@ public class AcomodarLibros : MonoBehaviour
 
     public void Exit()
     {
-        SceneManager.LoadScene("Living Room");
+        SceneManager.LoadScene("North East");
         Time.timeScale = 1;
     }
 }

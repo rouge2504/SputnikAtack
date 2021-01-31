@@ -52,8 +52,11 @@ public class MoveSistem : MonoBehaviour
         }
         if (PiezasEncajadas == 3)
         {
-            SceneManager.LoadScene("Tv puzzle");
-            ObjetoClave = true;
+            if(VariablesGlobales.Cuero_azar == 3)
+            {
+                VariablesGlobales.Cuero = true;
+            }
+            Exit();
         }
     }
 
@@ -65,7 +68,7 @@ public class MoveSistem : MonoBehaviour
 
     public void Exit()
     {
-        SceneManager.LoadScene("Living Room");
+        SceneManager.LoadScene("Storage");
         Time.timeScale = 1;
     }
 }

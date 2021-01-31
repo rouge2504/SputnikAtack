@@ -93,7 +93,11 @@ public class GameControl : MonoBehaviour
         if (Imagen0Funciona == true && Imagen1Funciona == true && Imagen2Funciona == true && Imagen3Funciona == true && Imagen4Funciona == true && Imagen5Funciona == true)
         {
             youWin = true;
-            SceneManager.LoadScene("Cereal Puzzle");
+            if (VariablesGlobales.Cuero_azar == 1)
+            {
+                VariablesGlobales.Cuero = true;
+            }
+            Exit();
         }
     }
 
@@ -104,7 +108,7 @@ public class GameControl : MonoBehaviour
 
     public void Exit()
     {
-        SceneManager.LoadScene("Living Room");
+        SceneManager.LoadScene("Kitchen");
     }
 
 }
