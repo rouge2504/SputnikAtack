@@ -69,11 +69,6 @@ public class Boss3 : MonoBehaviour
             }
         }
 
-        if (VariablesGlobales.Vida_jugador == 0)
-        {
-            VariablesGlobales.Enemigo_fase3_existe = false;
-            SceneManager.LoadScene("Living Room");
-        }
     }
 
     IEnumerator ChangeState()
@@ -95,7 +90,7 @@ public class Boss3 : MonoBehaviour
     {
         if (dañorecibido == false)
         {
-            if (collision.gameObject.tag == "Shoot")
+            if (collision.gameObject.tag == "Shoot2")
             {
                 VariablesGlobales.Vida_enemigo_fase3 -= 20;
                 dañorecibido = true;

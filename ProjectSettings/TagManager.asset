@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Puzzle
   - Shoot
+  - Shoot2
   layers:
   - Default
   - TransparentFX

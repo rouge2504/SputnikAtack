@@ -20,6 +20,13 @@ public class MovimientoJugador : MonoBehaviour
     public float tiempoInicial;
     public float TiempoLimite = 0.8f;
 
+    [Header("Bullet")]
+    [SerializeField] private float timeToSpawnBullet = 3;
+    private float timingToSpawnBullet =0;
+    [SerializeField] private GameObject bullet;
+    [SerializeField] private Transform spawnBullet;
+    [SerializeField] private Transform target;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -77,6 +84,12 @@ public class MovimientoJugador : MonoBehaviour
             atack = true;
             animator.SetBool("Shoot", true);
             tiempoInicial += Time.deltaTime;
+ 
+                Debug.Log("Estoy disparando timing to bullet");
+
+                GameObject clone = Instantiate(bullet, spawnBullet.position, spawnBullet.rotation);
+                clone.GetComponent<BulletEnemy>().targetPos = target.position;
+            
 
         }
         if (atack == true)
