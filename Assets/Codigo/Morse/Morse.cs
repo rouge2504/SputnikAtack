@@ -54,7 +54,11 @@ public class Morse : MonoBehaviour
             tiempoInicial++;
             if (tiempoInicial == 1)
             {
-                SceneManager.LoadScene("Living Room");
+                if(VariablesGlobales.Corona_azar == 1)
+                {
+                    VariablesGlobales.Corona = true;
+                }
+                Exit();
             }
         }
         else
@@ -65,6 +69,6 @@ public class Morse : MonoBehaviour
 
     public void Exit()
     {
-        SceneManager.LoadScene("Living Room");
+        SceneManager.LoadScene("Big Sitting room");
     }
 }
