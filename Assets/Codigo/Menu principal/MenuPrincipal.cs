@@ -7,7 +7,7 @@ public class MenuPrincipal : MonoBehaviour
 {
     public void Jugar()
     {
-        SceneManager.LoadScene("Simon dice");
+        SceneManager.LoadScene("Tutorial");
     }
 
     public void Creditos()

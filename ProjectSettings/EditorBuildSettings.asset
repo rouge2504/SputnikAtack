@@ -89,4 +89,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TV puzzle.unity
     guid: 513228847de5e3e40abf623e4984360b
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: fe43c23f42203a6459b58c03a0905c42
+  - enabled: 1
+    path: Assets/Scenes/Agradecimientos.unity
+    guid: d98284baa3b1b8541be9e7f068749ab3
   m_configObjects: {}

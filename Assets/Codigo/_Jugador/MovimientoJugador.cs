@@ -12,6 +12,9 @@ public class MovimientoJugador : MonoBehaviour
     public bool animacion;
     public bool atack;
 
+    public float tiempoInicial;
+    public float TiempoLimite;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -67,11 +70,19 @@ public class MovimientoJugador : MonoBehaviour
         {
             atack = true;
             animator.SetBool("Shoot", true);
+            tiempoInicial += Time.deltaTime;
+
         }
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (atack == true)
         {
-            atack = false;
-            animator.SetBool("Shoot", false);
+            tiempoInicial += Time.deltaTime;
         }
+        if (tiempoInicial >= TiempoLimite)
+        {
+            animator.SetBool("Shoot", false);
+            atack = false;
+            tiempoInicial = 0;
+        }
+
     }
 }
