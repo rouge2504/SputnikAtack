@@ -4,17 +4,19 @@ using UnityEngine;
 
 public static class VariablesGlobales 
 {
-
+    private static int cuero_azar, sello_azar, corona_azar;
+    private static bool cuero, sello, corona, talisman, llave1, llave2, zona1_bloqueada, zona2_bloqueada;
+    private static float vida_jugador, vida_enemigo_fase1, vida_enemigo_fase2, vida_enemigo_fase3;
     public static int Cuero_azar
     {
         get
         {
-            return Cuero_azar;
+            return cuero_azar;
         }
 
         set
         {
-            Cuero_azar = value;
+            cuero_azar = value;
         }
     }
 
@@ -22,24 +24,24 @@ public static class VariablesGlobales
     {
         get
         {
-            return Sello_azar;
+            return sello_azar;
         }
 
         set
         {
-            Sello_azar = value;
+            sello_azar = value;
         }
     }
     public static int Corona_azar
     {
         get
         {
-            return Corona_azar;
+            return corona_azar;
         }
 
         set
         {
-            Corona_azar = value;
+            corona_azar = value;
         }
     }
 
@@ -47,12 +49,12 @@ public static class VariablesGlobales
     {
         get
         {
-            return Cuero;
+            return cuero;
         }
 
         set
         {
-            Cuero = value;
+            cuero = value;
         }
     }
 
@@ -60,12 +62,12 @@ public static class VariablesGlobales
     {
         get
         {
-            return Sello;
+            return sello;
         }
 
         set
         {
-            Sello = value;
+            sello = value;
         }
     }
 
@@ -73,12 +75,12 @@ public static class VariablesGlobales
     {
         get
         {
-            return Corona;
+            return corona;
         }
 
         set
         {
-            Corona = value;
+            corona = value;
         }
     }
 
@@ -86,12 +88,12 @@ public static class VariablesGlobales
     {
         get
         {
-            return Talisman;
+            return talisman;
         }
 
         set
         {
-            Talisman = value;
+            talisman = value;
         }
     }
 
@@ -99,12 +101,12 @@ public static class VariablesGlobales
     {
         get
         {
-            return Llave1;
+            return llave1;
         }
 
         set
         {
-            Llave1 = value;
+            llave1 = value;
         }
     }
 
@@ -112,12 +114,12 @@ public static class VariablesGlobales
     {
         get
         {
-            return Llave2;
+            return llave2;
         }
 
         set
         {
-            Llave2 = value;
+            llave2 = value;
         }
     }
 
@@ -125,12 +127,12 @@ public static class VariablesGlobales
     {
         get
         {
-            return Zona1_bloqueada;
+            return zona1_bloqueada;
         }
 
         set
         {
-            Zona1_bloqueada = value;
+            zona1_bloqueada = value;
         }
     }
 
@@ -138,12 +140,12 @@ public static class VariablesGlobales
     {
         get
         {
-            return Zona2_bloqueada;
+            return zona2_bloqueada;
         }
 
         set
         {
-            Zona2_bloqueada = value;
+            zona2_bloqueada = value;
         }
     }
 
@@ -151,12 +153,12 @@ public static class VariablesGlobales
     {
         get
         {
-            return Vida_jugador;
+            return vida_jugador;
         }
 
         set
         {
-            Vida_jugador = value;
+            vida_jugador = value;
         }
     }
 
@@ -164,12 +166,12 @@ public static class VariablesGlobales
     {
         get
         {
-            return Vida_enemigo_fase1;
+            return vida_enemigo_fase1;
         }
 
         set
         {
-            Vida_enemigo_fase1 = value;
+            vida_enemigo_fase1 = value;
         }
     }
 
@@ -177,12 +179,12 @@ public static class VariablesGlobales
     {
         get
         {
-            return Vida_enemigo_fase2;
+            return vida_enemigo_fase2;
         }
 
         set
         {
-            Vida_enemigo_fase2 = value;
+            vida_enemigo_fase2 = value;
         }
     }
 
@@ -190,12 +192,12 @@ public static class VariablesGlobales
     {
         get
         {
-            return Vida_enemigo_fase3;
+            return vida_enemigo_fase3;
         }
 
         set
         {
-            Vida_enemigo_fase3 = value;
+            vida_enemigo_fase3 = value;
         }
     }
 
