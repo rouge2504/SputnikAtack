@@ -52,10 +52,9 @@ public class TheCrown : MonoBehaviour
         }
         if (PiezasEncajadas == 3)
         {
-            if (VariablesGlobales.Cuero_azar == 3)
-            {
-                VariablesGlobales.Cuero = true;
-            }
+
+                VariablesGlobales.Talisman = true;
+
             Exit();
         }
     }
@@ -68,7 +67,7 @@ public class TheCrown : MonoBehaviour
 
     public void Exit()
     {
-        SceneManager.LoadScene("Storage");
+        SceneManager.LoadScene("Dressing Room");
         Time.timeScale = 1;
     }
 }
